@@ -66,7 +66,7 @@
 
   /* ---------- TOPBAR ---------- */
   header{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .4s ease,box-shadow .4s ease,border-color .4s ease;border-bottom:1px solid transparent}
-  header.solid{background:rgba(244,239,228,.96);border-bottom-color:var(--linia);box-shadow:0 6px 24px -18px rgba(21,58,60,.5)}
+  header.solid{background:var(--arena);border-bottom-color:var(--linia);box-shadow:0 6px 24px -18px rgba(21,58,60,.5)}
   .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 26px;max-width:var(--ample);margin:0 auto}
   .brand{display:flex;align-items:center;gap:12px;color:var(--blanc);transition:color .4s ease}
   header.solid .brand{color:var(--marina)}
@@ -622,8 +622,8 @@
             <div class="fld">
               <label for="lvlSel" data-i18n="sol_lvl_lbl">Reitniveau</label>
               <select id="lvlSel">
-                <option value="beg" data-i18n="lvl_beg">Einsteiger</option>
-                <option value="int" data-i18n="lvl_int" selected>Fortgeschritten</option>
+                <option value="beg" data-i18n="lvl_beg" selected>Einsteiger</option>
+                <option value="int" data-i18n="lvl_int">Fortgeschritten</option>
                 <option value="adv" data-i18n="lvl_adv">Erfahren</option>
               </select>
             </div>
@@ -678,10 +678,10 @@
     </div>
     <div class="gal-grid">
       <div class="gcell tall reveal r-s"><img src="images/hero-horse.jpg" alt="Iberisches Pferd / PRE" loading="lazy"><div class="cap" data-i18n="gal_c1">Iberische Pferde &amp; PRE</div></div>
-      <div class="gcell reveal r-s"><img src="images/beach-ride-2.jpg" alt="Reiten im Naturpark La Mata" loading="lazy"><div class="cap" data-i18n="gal_c2">Naturpark La Mata</div></div>
+      <div class="gcell reveal r-s"><img src="images/landscape.jpg" alt="Naturpark La Mata — Lagune und Pinien" loading="lazy"><div class="cap" data-i18n="gal_c2">Naturpark La Mata</div></div>
       <div class="gcell reveal r-s"><img src="images/route-water.jpg" alt="Ausritt an der Lagune" loading="lazy"><div class="cap" data-i18n="gal_c3">Ausritte an der Lagune</div></div>
       <div class="gcell reveal r-s"><img src="images/foal.jpg" alt="Stute mit Fohlen" loading="lazy"><div class="cap" data-i18n="gal_c4">Auf dem Hof geboren</div></div>
-      <div class="gcell reveal r-s"><img src="images/landscape.jpg" alt="Landschaft mit Lagune" loading="lazy"><div class="cap" data-i18n="gal_c5">Lagune von La Mata</div></div>
+      <div class="gcell reveal r-s"><img src="images/sunset.jpg" alt="Sonnenuntergang über der Lagune von La Mata" loading="lazy"><div class="cap" data-i18n="gal_c5">Lagune von La Mata</div></div>
     </div>
   </div>
 </section>
@@ -696,7 +696,7 @@
       </div>
       <div class="txt reveal r-r">
         <p class="eyebrow" data-i18n="finca_eyebrow">Der Hof</p>
-        <h2 data-i18n-html="finca_h2">Über den Ställen schlafen, <em>einen Schritt vom Meer.</em></h2>
+        <h2 data-i18n-html="finca_h2">Über den Ställen schlafen, <em>einen Schritt von Natur und Lagune.</em></h2>
         <p data-i18n="finca_p">Ein familiärer Reiterhof mit eigener Unterkunft direkt über den Ställen. Am Morgen wachst du zwischen den Pferden auf; nachmittags bist du in Minuten am Strand oder an der Lagune von La Mata.</p>
         <ul class="feat-list">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M4 21v-9l8-6 8 6v9M9 21v-5h6v5"/></svg><span data-i18n="finca_l1">Eigene Unterkunft über den Ställen</span></li>
@@ -877,7 +877,7 @@ var I18N = {
     gal_eyebrow:"Galerie", gal_h2:"Der Ort spricht <em>für sich.</em>",
     gal_c1:"Iberische Pferde & PRE", gal_c2:"Naturpark La Mata", gal_c3:"Ausritte an der Lagune", gal_c4:"Auf dem Hof geboren", gal_c5:"Lagune von La Mata", gal_c6:"Nähe zu den Tieren",
     finca_eyebrow:"Der Hof", finca_badge:"Guardamar / Torrevieja · Alicante",
-    finca_h2:"Über den Ställen schlafen, <em>einen Schritt vom Meer.</em>",
+    finca_h2:"Über den Ställen schlafen, <em>einen Schritt von Natur und Lagune.</em>",
     finca_p:"Ein familiärer Reiterhof mit eigener Unterkunft direkt über den Ställen. Am Morgen wachst du zwischen den Pferden auf; nachmittags bist du in Minuten am Strand oder an der Lagune von La Mata.",
     finca_l1:"Eigene Unterkunft über den Ställen", finca_l2:"Naturpark La Mata und unberührter Strand, gleich nebenan", finca_l3:"Pool, hausgemachte Küche und Ruhe", finca_l4:"Baden fast das ganze Jahr — mildes Klima",
     nos_eyebrow:"Über uns", nos_h2:"Ein familiärer Hof, <em>deutsch geführt.</em>", nos_role:"Gabi & Peter · El Refugio, seit 1986",
@@ -929,7 +929,7 @@ var I18N = {
     gal_eyebrow:"Gallery", gal_h2:"The place speaks <em>for itself.</em>",
     gal_c1:"Iberian & PRE horses", gal_c2:"La Mata Natural Park", gal_c3:"Rides by the lagoon", gal_c4:"Born on the ranch", gal_c5:"La Mata lagoon", gal_c6:"Close to the animals",
     finca_eyebrow:"The ranch", finca_badge:"Guardamar / Torrevieja · Alicante",
-    finca_h2:"Sleep above the stables, <em>a step from the sea.</em>",
+    finca_h2:"Sleep above the stables, <em>a step from nature and the lagoon.</em>",
     finca_p:"A family ranch with its own accommodation right above the stables. In the morning you wake among the horses; in the afternoon you're minutes from the beach or the La Mata lagoon.",
     finca_l1:"Own accommodation above the stables", finca_l2:"La Mata Natural Park and unspoilt beach, right nearby", finca_l3:"Pool, home cooking and quiet", finca_l4:"Swim almost all year — mild climate",
     nos_eyebrow:"About us", nos_h2:"A family ranch, <em>German-run.</em>", nos_role:"Gabi & Peter · El Refugio, since 1986",
@@ -981,7 +981,7 @@ var I18N = {
     gal_eyebrow:"Galería", gal_h2:"El sitio habla <em>por sí solo.</em>",
     gal_c1:"Caballos ibéricos y PRE", gal_c2:"Parque Natural de La Mata", gal_c3:"Rutas junto a la laguna", gal_c4:"Nacidos en la finca", gal_c5:"Laguna de La Mata", gal_c6:"Cerca de los animales",
     finca_eyebrow:"La finca", finca_badge:"Guardamar / Torrevieja · Alicante",
-    finca_h2:"Dormir sobre los establos, <em>a un paso del mar.</em>",
+    finca_h2:"Dormir sobre los establos, <em>a un paso de la naturaleza y la laguna.</em>",
     finca_p:"Una finca familiar con alojamiento propio justo encima de los establos. Por la mañana te despiertas entre los caballos; por la tarde estás en minutos en la playa o en la laguna de La Mata.",
     finca_l1:"Alojamiento propio sobre los establos", finca_l2:"Parque Natural de La Mata y playa virgen, a un paso", finca_l3:"Piscina, cocina casera y tranquilidad", finca_l4:"Baño casi todo el año — clima suave",
     nos_eyebrow:"Nosotros", nos_h2:"Un centro familiar, <em>de gestión alemana.</em>", nos_role:"Gabi y Peter · El Refugio, desde 1986",
@@ -1006,7 +1006,7 @@ var OPTIONS = {
   "use strict";
   var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lang = "de";
-  var state = { kind:"ruta", opt:"ruta1_t", date:"", ppl:2, lvl:"int", name:"" };
+  var state = { kind:"ruta", opt:"ruta1_t", date:"", ppl:2, lvl:"beg", name:"" };
 
   function t(key){ return (I18N[lang] && I18N[lang][key]) || (I18N.de[key]) || key; }
 
